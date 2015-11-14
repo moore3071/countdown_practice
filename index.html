@@ -6,9 +6,6 @@
 			body {
 				background-color: rgb(50,50,175);
 			}
-			button {
-				margin: auto;
-			}
 			#selector {
 				margin: auto;
 				width: 20em;
@@ -16,15 +13,22 @@
 			}
 			h1 {
 				margin: auto;
-				width: 15em;
+				width: 100%;
 			}
 			h1 span {
 				color: white;
 				background: blue;
 				display: inline-block;
 				text-align: center;
-				width: 1.2em;
-				height: 1.2em;
+				width: 10vw;
+				height: 10vw;
+				font-size: 9vw;
+			}
+			span:first-child {
+				margin-left: auto;
+			}
+			span:last-child {
+				margin-right: auto;
 			}
 		</style>
 	</head>
@@ -42,9 +46,9 @@
 		</h1>
 
 		<div id="selector">
-			<button id="numbers">Numbers</button>
-			<button id="letters">Letters</button>
-			<button id="conundrum">Conundrum</button>
+			<a href="numbers.html">Numbers</a>
+			<a href="letters.html">Letters</a>
+			<a href="conundrum.html">Conundrum</a>
 		</div>
 	</body>
 </html>
