@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Numbers practice</title>
+		<script src="numbers_game.js"></script>
 		<style>
 			html, body {
 				margin: 0px;
@@ -94,22 +95,33 @@
 				height: 2rem;
 				display: block;
 				clear: both;
-				background: white;
+				background: rgb(50,50,175);
 				margin: auto;
 				text-align: center;
+				border: .2rem rgb(100,150,200) solid;
+				color: white;
+				font-weight: bold;
 			}
 			#number_choices {
 				display: flex;
 				margin-top: 1rem;
+			}
+
+			.number:first-child {
+				border-left: .2rem rgb(100,150,200) solid;
 			}
 			.number {
 				float: left;
 				width: 2rem;
 				height: 2rem;
 				display: block;
-				margin-right: 1rem;
 				padding: 0px;
-				background: white;
+				color: white;
+				font-weight: bold;
+				background: rgb(50,50,175);
+				border-top: .2rem rgb(100,150,200) solid;
+				border-bottom: .2rem rgb(100,150,200) solid;
+				border-right:.2rem rgb(100,150,200) solid;
 			}
 			#num1 {
 				margin-left: auto;
@@ -192,6 +204,11 @@
 					<span id="num6" class="number">2</span>
 				</div>
 			</div>
+		</div>
+		<div id="controls">
+			<button onclick="start_game()" id="startGame">Start</button>
+			<button onlick="choose_large_number()">Large number</button>
+			<button onclick="choose_small_number()">Small number</button>
 		</div>
 
 		<div id="selector">
